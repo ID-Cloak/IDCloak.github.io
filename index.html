@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
   <meta name="description"
         content="ID-Cloak: Crafting Identity-Specific Cloaks Against Personalized Text-to-Image Generation">
   <title>ID-Cloak: Crafting Identity-Specific Cloaks Against Personalized Text-to-Image Generation</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script async src="
+https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -20,7 +22,8 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  <link href="
+https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
@@ -28,16 +31,66 @@
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+        href="
+https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="
+https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <!-- 原有head部分保持不变，增加以下样式 -->
+  <style>
+    /* 新增自定义样式 */
+    .experiment-section {
+      margin: 4rem auto;
+      max-width: 1200px;
+      padding: 2rem;
+      background: #f8f9fa;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      margin: 1.5rem 0;
+    }
+
+    .image-container img {
+      max-width: 80%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .image-container img:hover {
+      transform: scale(1.02);
+    }
+
+    .caption {
+      margin: 1rem 0;
+      padding: 1rem;
+      background: white;
+      border-radius: 6px;
+      font-style: italic;
+      color: #666;
+    }
+
+    /* 调整原有标题样式 */
+    .publication-title {
+      letter-spacing: -0.5px;
+      margin-bottom: 2rem;
+    }
+  </style>
+  <!-- 原有head内容保持不变 -->
 </head>
 <body>
+<body>
+
 
 <section class="hero">
   <div class="hero-body">
@@ -53,23 +106,53 @@
   </div>
 </section>
 
-
-<!-- Experiment1. -->
-<div class="your-carousel">
-  <div class="carousel-item">
-    <img src="./static/images/sup-many-combine-elephant.png" alt="Elephant">
+<!-- Experiment1 -->
+<section class="experiment-section">
+  <div class="container">
+    <div class="image-container">
+      <img src="./static/images/image1.png" alt="Experiment 1 Visualization">
+    </div>
+    <h2 class="subtitle has-text-centered caption">
+      Figure R1: Our protection's effectiveness against tuning-free personalization method (ip-adapter).
+    </h2>
   </div>
-  <div class="carousel-item">
-    <img src="./static/images/sup-many-combine-tank.png" alt="Tank">
+</section>
+
+<!-- Experiment2 -->
+<section class="experiment-section">
+  <div class="container">
+    <div class="image-container">
+      <img src="./static/images/image2.png" alt="Experiment 2 Visualization">
+    </div>
+    <h2 class="subtitle has-text-centered caption">
+      Figure R2: Results of ID-cloak with different protection ratios.
+    </h2>
   </div>
-</div>
-<!--caption-->
-<h2 class="subtitle has-text-centered">
-   Qualitative results on various reference styles.
-</h2>
-<!--/ Experiment1. -->
+</section>
 
+<!-- Experiment3 -->
+<section class="experiment-section">
+  <div class="container">
+    <div class="image-container">
+      <img src="./static/images/image3.png" alt="Experiment 3 Visualization">
+    </div>
+    <h2 class="subtitle has-text-centered caption">
+      Figure R3: Qualitative comparison on more complex and diverse prompts.
+    </h2>
+  </div>
+</section>
 
+<!-- Experiment4 -->
+<section class="experiment-section">
+  <div class="container">
+    <div class="image-container">
+      <img src="./static/images/image2.png" alt="Experiment 4 Visualization">
+    </div>
+    <h2 class="subtitle has-text-centered caption">
+      Figure R4: Ablation study on effect of input image numbers on ID-cloak performance.
+    </h2>
+  </div>
+</section>
 
 <footer class="footer">
   <div class="container">
